@@ -1,0 +1,315 @@
+/*added reset CSS properties/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  
+  /* Positioning */
+  margin: 0;
+  vertical-align: baseline;
+
+  /* Box-model */
+  padding: 0;
+
+  /* Typography */
+  font-size: 100%;
+  font: inherit;
+
+  /* Visual */
+  border: 0;
+  
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section { display: block; }
+
+body { line-height: 1; }
+
+ol,
+ul { list-style: none; }
+
+blockquote,
+q { quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  
+  /* Misc */
+  content: '';
+  content: none;
+
+}
+
+table {
+  
+  /* Visual */
+  border-collapse: collapse;
+  border-spacing: 0;
+
+}
+
+/*custom CSS properties for whole page*/
+
+* {
+    box-sizing: border-box;
+    /* deleted: padding: 0;
+    margin: 0;*/
+}
+
+body {
+    background-color: #d9dcd6;
+    min-width: 1200px;
+}
+
+/*header and nav*/
+
+.header {
+    padding: 20px;
+    background-color: #2a607c;
+    color: #fff /*deleted fff*/;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    margin-left: 25px;
+    font-family: Public Sans;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+.header div {
+    margin-right: 20px;
+    float: right;
+}
+
+.header div ul {
+    list-style-type: none;
+    float: left;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.header div ul li a {
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 20px;
+    color: #fff;    /*deleted fff*/
+}
+
+/* main picture */
+
+.main-picture {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+
+/* main content */
+
+.content {
+    width: 74%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+}
+
+.content .search-engine-optimization,
+.content .online-reputation-management, 
+.content .social-media-marketing {
+    display: block;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;    
+    font-size: 16px;
+    font-family: Quicksand;
+    color: #fff /*deleted fff*/;
+}
+
+.content .search-engine-optimization h2, 
+.content .online-reputation-management h2,
+.content .social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.content .search-engine-optimization img,
+.content .online-reputation-management img,
+.content .social-media-marketing img {
+    max-height: 200px;
+}
+
+.content .search-engine-optimization img,
+.content .online-reputation-management img {
+    float: left;
+    margin-right: 25px;
+}
+
+.content .social-media-marketing img {
+    float: right;
+    margin-left: 25px;
+}
+
+/*content on the right side*/
+
+.benefits {
+    margin-right: 2%;
+    padding: 20px;
+    float: right;
+    width: 20%;
+    height: 100%;
+    background-color: #2589bd;
+    font-family: Quicksand;
+    font-size: 16px;
+    color: #fff /*deleted fff*/;
+}
+
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 32px;
+}
+
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+/* footer */
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: Public Sans;
+    text-align: center;
+    color: #000;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+.footer h2 .heart {
+    color: #f00
+}
+
+.footer p {
+    font-size: 16px;
+}
