@@ -1,4 +1,4 @@
-# Zerrtry.github.01Homework
+# Zerrtry.01Homework
 Code Refactor
 
 What was made for this project:
